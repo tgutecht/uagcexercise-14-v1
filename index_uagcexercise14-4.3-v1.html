@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Forms with CSS&JS</title>
+    <link rel="stylesheet" href="styles_uagcexercise14-4.3-v1.css">
+  </head>
+  <body>
+      <form
+        method="post"
+        action="#"
+        name="myForm"
+        class="formContent"
+        id="fullForm"><!--does it matter if I target with form class or put a div around it and target that way to style this area?-->
+        <p id="nameRequired"></p>
+        <!-- Name Input-->
+      <div class="inputs">
+        <label
+          for="firstName">User Name
+        </label><!--why use same thing for and id on input?--><br>
+        <input
+          type="text"
+          name="firstName"
+          id="firstName"
+          placeholder="Enter first name"
+          /> <!--value="#"  if I add value, placeholder doesnt work, do I need to use them symultanously if so how to make it work?-->
+      </div>
+
+      <!-- Email Input-->
+      <div class="inputs">
+        <label
+          for="emailAddress">Email Address
+        </label><br>
+        <input
+          type="email"
+          name="emailAddress"
+          id="emailAddress"
+          placeholder="Enter email address"/>
+      </div>
+
+        <!-- Password-->
+        <div class="inputs">
+          <label for="enterPassword">Password</label><br>
+          <input
+                 type="password"
+                 name="enterPassword"
+                 id="enterPassword"
+                 placeholder="Enter password"
+                 value="#" > <!--why to use value here-->
+        </div>
+
+        <!-- time zone -->
+        <div class="inputs">
+          <label for="timeDropdown">Time</label><br>
+          <select id="myDropdown">
+            <option value="1"></option>
+            <option value="2">Eastern</option>
+            <option value="3" selected="selected">Central</option>
+            <option value="4">Mountain</option>
+            <option value="5">Pacific</option>
+        </select>
+        </div>
+
+        <div class="checks">
+          <input type="checkbox" name="myCheck" id="myCheck" value="Yes" unchecked>
+          <label for="myCheck">Accept Terms and Conditions</label>
+        </div>
+
+        <!-- Submit -->
+        <div class="sbmts">
+
+          <button id="sbmtin" type="submit">Submit Here</button>
+
+          <!-- Reset -->
+          <button id="rstin" type="reset" value="Reset">Reset Here</button>
+
+        </div>
+
+    <!---closing div-->
+
+    </form>
+    <script src="script.js"> </script>
+  </body>
+</html>
