@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>HTML Forms with CSS&JS</title>
+    <title>Assignment 14</title>
     <link rel="stylesheet" href="styles_uagcexercise14-4.3-v1.css">
   </head>
   <body>
+    <p>HTML Forms with CSS&JS</p>
+    <section id="errorList" class="errors"></section>
       <form
         method="post"
         action="#"
         name="myForm"
         class="formContent"
         id="fullForm"><!--does it matter if I target with form class or put a div around it and target that way to style this area?-->
-        <p id="nameRequired"></p>
         <!-- Name Input-->
       <div class="inputs">
         <label
@@ -22,6 +23,7 @@
           name="firstName"
           id="firstName"
           placeholder="Enter first name"
+          required
           /> <!--value="#"  if I add value, placeholder doesnt work, do I need to use them symultanously if so how to make it work?-->
       </div>
 
@@ -34,7 +36,7 @@
           type="email"
           name="emailAddress"
           id="emailAddress"
-          placeholder="Enter email address"/>
+          placeholder="Enter email address" required/>
       </div>
 
         <!-- Password-->
@@ -65,15 +67,12 @@
           <label for="myCheck">Accept Terms and Conditions</label>
         </div>
 
-        <!-- Submit -->
-        <div class="sbmts">
+        <!-- Submit & Reset -->
+        <section class="control-panel">
+               <input type = "submit" value = submit" id="sbmtButton"></input>
+               <button type = "reset" id="rstButton">Reset</button>
 
-          <button id="sbmtin" type="submit">Submit Here</button>
-
-          <!-- Reset -->
-          <button id="rstin" type="reset" value="Reset">Reset Here</button>
-
-        </div>
+       </section>
 
     <!---closing div-->
 

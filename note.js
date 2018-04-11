@@ -31,8 +31,8 @@ function update() {
     message.push("Password is required!")
   }
 
-  for (var i=0;i<messages.length;i++) {
-        getElm('errorList').innerHTML += messages[i] + "<br>";
+  for (i=0;i<messages.length;i++) {
+        getElm('error-list').innerHTML += messages[i] + "<br>";
     }
 
 }
